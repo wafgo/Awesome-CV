@@ -83,7 +83,7 @@
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
 % Needed to deal hyperlink
-\RequirePackage[hidelinks,unicode,pdfpagelabels=false]{hyperref}
+\RequirePackage[colorlinks=true,urlcolor=awesome-red, linkcolor=awesome-nephritis, unicode,pdfpagelabels=false]{hyperref}
 \hypersetup{%
   pdftitle={},
   pdfauthor={},
@@ -785,7 +785,7 @@
   \par\addvspace{2.5ex}
   \phantomsection{}
   \lettersectionstyle{#1}
-  \color{sectiondivider}\vhrulefill{0.9pt}
+  \color{sectiondivider}\vhrulefill{0.7pt}
   \par\nobreak\addvspace{0.4ex}
   \lettertextstyle
 }
@@ -804,7 +804,7 @@
   \end{singlespace}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
-    {\lettertitlestyle{\@lettertitle} \\}
+    {\lettertitlestyle{\@lettertitle} \\[1em]}
   \lettertextstyle{\@letteropening}
 }
 

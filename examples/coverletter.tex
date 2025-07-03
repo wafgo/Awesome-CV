@@ -50,17 +50,16 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./examples/profile}
-\name{Claud D.}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\name{Wadim}{Müller}
+\position{System Software Expert{\enskip\cdotp\enskip}Linux Enthusiast}
+\address{An den Mainwiesen 51, 63533 Mainhausen, Germany}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\mobile{(+49) 176-96526090}
+\email{wadim.mueller@mail.de}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+%\homepage{www.posquit0.com}
+\github{wafgo}
+\linkedin{Wadim Mueller}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -76,7 +75,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{“He who stops being better stops being good.” (Oliver Cromwell)}
 
 
 %-------------------------------------------------------------------------------
@@ -85,14 +84,14 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+  {Canonical Recruitment Team}
+  {Canonical}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer}
+\lettertitle{Job Application for Ubuntu Linux Kernel Engineer - Silicon Enablement}
 % How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
+\letteropening {Dear Mr. Grandbois, }
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
@@ -110,7 +109,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Cover Letter}
+  {Wadim Müller~~~·~~~Cover Letter}
   {}
 
 % Print the title with above letter information
@@ -121,14 +120,19 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About Me}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+I am writing to express my enthusiastic interest in the Silicon Enablement Ubuntu Linux Kernel Engineer position I found on canonical.com. As an embedded software engineer with over a decade of experience solving technically challenging problems across diverse CPU/SoC platforms, and with direct contributions to the mainline Linux Kernel, I am confident that my skills are an excellent match for the requirements of this role.
 
-\lettersection{Why Google?}
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+In my current position at the startup CMBlu, I am developing a Battery Management System based on Yocto Linux. My responsibilities include writing and integrating Linux Kernel drivers for our custom boards and leading the board bring-up of our mainboard, which is based on the TI AM64xx SoC. This role has further sharpened my skills in low-level driver development and system integration.
 
-\lettersection{Why Me?}
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+Previously, at Continental, I was responsible for integrating SoC-vendor Board-Support-Packages into Greenhills INTEGRITY OS-powered products. A significant achievement was the creation of a full machine emulation for Renesas RCar3 SoC-based boards using QEMU. This required developing emulations for numerous SoC-specific peripherals and the bootrom to successfully boot a proprietary OS from the reset vector, work which can be viewed on my \href{https://github.com/wafgo/qemu/tree/rcar3_port}{QEMU GitHub fork}.
+
+My experience also includes developing a PCI Endpoint and the necessary drivers to pass through block devices between a PCI host and endpoint on the NXP S32G SoC. This involved writing both an endpoint and a PCI device driver for the Linux kernel, and I have posted the patch on the Linux Kernel Mailing List, which can be viewed here: \href{https://lwn.net/Articles/963538/}{lwn.net/Articles/963538/}.
+
+I am also passionate about driving process improvements. When we faced quality issues with our flash-frontend, I proposed and implemented a customized Yocto-based Linux distribution to resolve the problems. To aid in failure analysis for a Classic AUTOSAR project, I developed a unique Call Stack Analysis Tool capable of determining the worst-case stack usage by analyzing machine instructions directly from an ELF image. Its most innovative feature is the ability to detect calls made through function pointers by examining object file relocation entries.
+
+My Master's Thesis further expanded my expertise, involving the development of an FPGA-accelerated Linux system for real-time video feature extraction on a Xilinx Zynq PSoC. This project included designing two IP-Cores in Verilog and developing the corresponding Linux kernel device drivers. The IP-Core designs, kernel drivers, device tree, and demo application are all available on my \href{https://github.com/wafgo}{GitHub profile}.
+
+Thank you for your time and consideration. I am thrilled by the opportunity to bring my unique skills in low-level development and high-level system solutions to Canonical. I am eager to discuss my qualifications further and demonstrate my commitment to developing high-quality software.
 
 \end{cvletter}
 
