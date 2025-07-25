@@ -51,7 +51,7 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \name{Wadim}{Müller}
-\position{System Software Expert{\enskip\cdotp\enskip}Linux Enthusiast}
+\position{Embedded Software Expert{\enskip\cdotp\enskip}Linux Enthusiast}
 \address{An den Mainwiesen 51, 63533 Mainhausen, Germany}
 
 \mobile{(+49) 176-96526090}
@@ -84,18 +84,20 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Canonical Recruitment Team}
-  {Canonical}
+  {QAVION Recruitment Team}
+  {QUAVION GROUP GmbH}
+
+\vspace*{-1.5em}  
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Ubuntu Linux Kernel Engineer - Silicon Enablement}
+\lettertitle{Job Application for Senior Embedded Engineer}
 % How the letter is opened
-\letteropening {Dear Mr. Grandbois, }
+\letteropening {Dear Ms. Karimi, }
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
+% \letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
@@ -108,7 +110,7 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
+  {}
   {Wadim Müller~~~·~~~Cover Letter}
   {}
 
@@ -120,19 +122,24 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-I am writing to express my enthusiastic interest in the Silicon Enablement Ubuntu Linux Kernel Engineer position I found on canonical.com. As an embedded software engineer with over a decade of experience solving technically challenging problems across diverse CPU/SoC platforms, and with direct contributions to the mainline Linux Kernel, I am confident that my skills are an excellent match for the requirements of this role.
+I am writing to express my enthusiastic interest in the Senior Embedded Engineer position I found on linkedin.com. As an embedded software engineer with over a decade of experience solving technically challenging problems across diverse CPU/SoC platforms, and with direct contributions to the mainline Linux Kernel, I am confident that my skills are an excellent match for the requirements of this role.
 
-In my current position at the startup CMBlu, I am developing a Battery Management System based on Yocto Linux. My responsibilities include writing and integrating Linux Kernel drivers for our custom boards and leading the board bring-up of our mainboard, which is based on the TI AM64xx SoC. This role has further sharpened my skills in low-level driver development and system integration.
+In my current position at the startup CMBlu, a startup focused on energy storage solutions, I am developing a Battery Management System based on Yocto Linux. My responsibilities include writing and integrating Linux Kernel drivers for our custom boards and leading the board bring-up of our mainboard, which is based on the TI AM64xx SoC. This role has further sharpened my skills in low-level driver development and system integration.
 
 Previously, at Continental, I was responsible for integrating SoC-vendor Board-Support-Packages into Greenhills INTEGRITY OS-powered products. A significant achievement was the creation of a full machine emulation for Renesas RCar3 SoC-based boards using QEMU. This required developing emulations for numerous SoC-specific peripherals and the bootrom to successfully boot a proprietary OS from the reset vector, work which can be viewed on my \href{https://github.com/wafgo/qemu/tree/rcar3_port}{QEMU GitHub fork}.
 
+In addition, I developed a comprehensive QEMU emulation of the NXP S32G Cortex-M7 tri-core system, including custom device models for Ethernet and CAN controllers. This setup enabled the unmodified Classic AUTOSAR stack—used in a Continental SDV platform—to boot and run successfully within QEMU.
+
+
 My experience also includes developing a PCI Endpoint and the necessary drivers to pass through block devices between a PCI host and endpoint on the NXP S32G SoC. This involved writing both an endpoint and a PCI device driver for the Linux kernel, and I have posted the patch on the Linux Kernel Mailing List, which can be viewed here: \href{https://lwn.net/Articles/963538/}{lwn.net/Articles/963538/}.
 
-I am also passionate about driving process improvements. When we faced quality issues with our flash-frontend, I proposed and implemented a customized Yocto-based Linux distribution to resolve the problems. To aid in failure analysis for a Classic AUTOSAR project, I developed a unique Call Stack Analysis Tool capable of determining the worst-case stack usage by analyzing machine instructions directly from an ELF image. Its most innovative feature is the ability to detect calls made through function pointers by examining object file relocation entries.
+I am also passionate about driving process improvements. To aid in failure analysis for a Classic AUTOSAR project, I developed a unique Call Stack Analysis Tool capable of determining the worst-case stack usage by analyzing machine instructions directly from an ELF image. Its most innovative feature is the ability to detect calls made through function pointers by examining object file relocation entries.
 
 My Master's Thesis further expanded my expertise, involving the development of an FPGA-accelerated Linux system for real-time video feature extraction on a Xilinx Zynq PSoC. This project included designing two IP-Cores in Verilog and developing the corresponding Linux kernel device drivers. The IP-Core designs, kernel drivers, device tree, and demo application are all available on my \href{https://github.com/wafgo}{GitHub profile}.
 
-Thank you for your time and consideration. I am thrilled by the opportunity to bring my unique skills in low-level development and high-level system solutions to Canonical. I am eager to discuss my qualifications further and demonstrate my commitment to developing high-quality software.
+I would also like to highlight earlier career achievements: At Rohde \& Schwarz, I ported FreeRTOS to an SH2A embedded CPU using GCC. At Magna Powertrain, I ported FreeRTOS to the NXP S12Z platform using the CodeWarrior toolchain.
+  
+Thank you for considering my application. I would welcome the opportunity to bring my embedded systems experience, Linux kernel expertise, and passion for solving hard technical problems to your team.
 
 \end{cvletter}
 
