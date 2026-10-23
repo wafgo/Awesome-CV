@@ -25,13 +25,14 @@
 %---------------------------------------------------------
   \cventry
     {Contributor} % Role
-    {QEMU} % Project
-    {lore.kernel.org/qemu-devel} % Link
-    {since 2026} % Date(s)
+    {QEMU, Psi4, thin-edge.io and others} % Project
+    {github.com/wafgo} % Link
+    {} % Date(s)
     {
       \begin{cvitems}
-        \item {TI AM64x SoC model and machine that runs the stock TI boot chain end to end (ROM, R5 SPL, TF-A/OP-TEE, U-Boot, SMP Linux); fix and qtest for an SDHCI ADMA bug.}
-        \item {Further: pyelftools (RH850 relocations), GEF (RISC-V), Psi4 (GauXC backend proposal), radare2, pahole.}
+        \item {\textbf{QEMU:} TI AM64x SoC model and machine that runs the stock TI boot chain end to end (ROM, R5 SPL, TF-A/OP-TEE, U-Boot, SMP Linux); fix and qtest for an SDHCI ADMA bug.}
+        \item {\textbf{Psi4 (quantum chemistry):} GauXC backend for the DFT exchange-correlation quadrature with optional GPU offload ($\sim$1k lines C++), after profiling showed it at 70\,\% of SCF time; superseded by a parallel upstream effort.}
+        \item {\textbf{thin-edge.io (Rust):} MQTT connection-leak fix (merged). Further: meta-tedge, pyelftools, GEF, Tinkerforge, radare2, pahole.}
       \end{cvitems}
     }
 

@@ -1,0 +1,27 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Selected Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Physics simulation, ML and closed-loop robotics} % Role
+    {Spinoza -- Table-Tennis Return Robot} % Project
+    {github.com/wafgo/spinoza} % Link
+    {2026} % Date(s)
+    {
+      \begin{cvitems}
+        \item {\textbf{Physics engine in Rust:} RK4 at 0.5\,ms with drag, Magnus force and a stick/slip bounce model; PyO3 bindings feed a PPO agent (Stable-Baselines3) and a 1D-CNN trajectory predictor.}
+        \item {\textbf{Hardware loop at 30\,Hz:} calibrated stereo camera, triangulation and a constant-acceleration Kalman filter drive analytical IK for a 4-DOF servo arm.}
+        \item {Built agent-first with AI coding assistants (Claude, Copilot), the workflow I also use in production.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}

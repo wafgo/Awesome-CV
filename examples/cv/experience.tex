@@ -11,20 +11,20 @@
 
 %---------------------------------------------------------
   \cventry
-    {Embedded Linux Developer{\enskip\cdotp\enskip}Lead Developer sBMS Control Platform} % Job title
+    {Embedded Linux Developer{\enskip\cdotp\enskip}Lead Developer Battery Control Platform} % Job title
     {CMBlu Energy AG} % Organization
     {Alzenau, Germany} % Location
     {since Feb. 2025} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\textbf{Greenfield architecture:} defined and built the control platform (Rust/Tokio) that runs the secondary Battery Management System on every redox-flow test stand: a component framework decoupled through a reactive datastore, configured per platform in YAML, with 50+ component types across ten hardware variants.}
+        \item {\textbf{Greenfield architecture:} defined and built the control platform (Rust/Tokio) that runs battery management and process control on every redox-flow test stand: a component framework decoupled through a reactive datastore, configured per platform in YAML, with 50+ component types across ten hardware variants.}
         \item {\textbf{Device and instrument integration:} BioLogic battery cyclers (REST API, ZeroMQ event stream, WebSockets), TRUMPF AC/DC and DC/DC power converters and ICP DAS I/O modules (Modbus TCP), Mettler Toledo M800 transmitters, flow, pressure and temperature sensors (I\textsuperscript{2}C, UART, IIO), and an RPMsg bridge to safety firmware on a Cortex-M4 core.}
         \item {\textbf{Control and safety:} closed-loop PI flow control of pumps and valves, a rule-based safety engine with debounced threshold alarms and a latched software E-STOP, and interlocks that keep deployments and updates from interrupting a running experiment.}
-        \item {\textbf{Operator HMIs and dashboards:} SCADA screens (FUXA) with animated process diagrams, live values and operator controls; fleet dashboards; and \texttt{fuxactl}, a tool that turns HMI projects into reviewable code with automated validation against a real runtime.}
+        \item {\textbf{Operator HMIs and dashboards:} SCADA screens (FUXA) with animated process diagrams, live values and operator controls; fleet dashboards; and tooling that turns HMI projects into reviewable, automatically validated code.}
         \item {\textbf{Data pipelines:} telemetry over MQTT/Protobuf into InfluxDB and Azure Event Hub, journal logs into Loki, and a read-only observability service that correlates logs, time series and cycler state across a fleet of 30+ nodes to diagnose anomalies.}
         \item {\textbf{Engineering practice:} set up the team's quality gates: CI with linting and static analysis, mandatory unit-test coverage per component, tests traceable to requirements, merge-request reviews, and a QEMU-based emulation of the target (incl. a mainline-submitted AM64x SoC model) for testing without hardware.}
         \item {Own the Yocto-based Linux distribution for the TI AM64x platform: board bring-up, BSP, kernel drivers (counter, PWM, GPIO, I\textsuperscript{2}C sensors; one upstreamed to mainline), RPM feed and a guarded over-the-air update path.}
-        \item {\textbf{Quantum chemistry / DFT (HTPVS):} built the high-throughput virtual-screening service chemists use to rank redox-active electrolyte candidates before synthesis. Computational workflow from SMILES to redox properties: conformer search (CREST), semi-empirical GFN2-xTB geometry optimisation and Boltzmann weighting, then DFT single points with Psi4 (hybrid and range-separated functionals such as B3LYP-D3(BJ) and \(\omega\)B97X-D, def2 basis sets). Software side: web application with 3D molecule visualisation, a compute back end that schedules the calculations against a CPU-core and memory budget, batch input with row-level validation and a token-secured REST API, on top of a Spark/Databricks pipeline with Delta tables.}
+        \item {\textbf{Quantum chemistry / DFT:} built the high-throughput virtual-screening service chemists use to rank redox-active electrolyte candidates before synthesis. Computational workflow from SMILES to redox properties: conformer search (CREST), semi-empirical GFN2-xTB geometry optimisation and Boltzmann weighting, then DFT single points with Psi4 (hybrid and range-separated functionals such as B3LYP-D3(BJ) and \(\omega\)B97X-D, def2 basis sets). Software side: web application with 3D molecule visualisation, a compute back end scheduling jobs against a CPU and memory budget, and a REST API on top of a Spark/Databricks pipeline.}
         \item {\textbf{ML soft-sensor:} replaced ORP probes that exist only on test rigs with a per-side state-of-charge model from operating signals alone (LightGBM, 47 engineered features, held-out MAE 8\%, R\textsuperscript{2} 0.75). Assembled the 2.5M-row training corpus from InfluxDB time series, Grafana operator annotations, test-order sheets and the lab database; cleaned swapped, stuck and implausible sensor channels; calibrated inline sensors against lab reference samples; wrote a pure-Rust inference engine that runs the model on the embedded target.}
       \end{cvitems}
     }
@@ -41,8 +41,6 @@
         \item {Designed and deployed the CMake-based build systems of several instrument-cluster products.}
         \item {Debugged system-level failures on multicore ARMv8/v7 systems via JTAG and trace (Green Hills MULTI, Lauterbach Trace32, ARM ETM), and built in-house tooling for it (offline stack unwinding, ETM setup).}
         \item {Built QEMU machine emulation of customised Renesas R-Car3 boards so that software could be developed and tested before hardware was available (\href{https://github.com/wafgo/qemu/tree/rcar3_port}{github.com/wafgo/qemu}).}
-        \item {Deployed a Yocto-based Linux distribution as flash front end for INTEGRITY-based instrument clusters.}
-        \item {Designed the architecture for regulating outbound DNS traffic in multi-account, multi-VPC AWS environments (Route53 DNS Firewall, FMS).}
       \end{cvitems}
     }
 
@@ -68,9 +66,8 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {\textbf{Instrument firmware:} developed embedded firmware for test and measurement instruments: oscilloscopes, spectrum analysers, power meters, LCR meters and multimeters, from board bring-up to measurement application modules with unit tests.}
-        \item {Implemented the USB TMC device interface used across several instrument families for remote configuration, control and measurement-data retrieval.}
+        \item {Implemented the USB TMC remote-control interface shared by several instrument families.}
         \item {Wrote Linux kernel drivers and bring-up software for custom i.MX6 and Renesas SH2A boards, incl. an SPI-to-Ethernet bridge (PIC32 firmware plus Linux network driver).}
-        \item {Built a Lauterbach Trace32 script infrastructure for early-boot debugging.}
       \end{cvitems}
     }
 
